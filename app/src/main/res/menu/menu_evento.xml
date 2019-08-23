@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_crear"
+        android:title="Crear Eventos"
+        />
+    <item
+        android:id="@+id/menu_op3"
+        android:title="Eventos actuales"
+        />
+    <item
+        android:id="@+id/menu_op4"
+        android:title="Eventos pasados"
+        />
+
+    <item
+        android:id="@+id/menu_op6"
+        android:title="Acerca de"
+        />
+    <item
+        android:id="@+id/menu_op5"
+        android:title="Cerrar sesión"
+        />
+
+
+</menu>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CrearEvento">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/wordBlack"
+            android:text="Crear Evento" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="12dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/wordBlack"
+                        android:textSize="20dp"
+                        android:text="Nombre del evento:" />
+
+                    <EditText
+                        android:id="@+id/nombre_evento"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/wordBlack" />
+                </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/wordBlack"
+                android:textSize="20dp"
+                android:text="Hora y fecha" />
+
+            <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+              android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_mostrar_fecha_picker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="date"
+                    android:hint="@string/formato_fecha"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginTop="32dp"
+                   />
+
+                <Button
+                    android:id="@+id/ib_obtener_fecha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:text="Fecha"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/et_mostrar_fecha_picker"
+                    android:layout_marginLeft="8dp"
+                    app:layout_constraintHorizontal_bias="0.505"
+                    android:layout_marginTop="32dp"
+                    tools:ignore="ContentDescription" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+              <EditText
+                  android:id="@+id/et_mostrar_hora_picker"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:ems="10"
+                  android:inputType="time"
+                  android:focusable="false"
+                  android:hint="@string/formato_hora"
+                  android:layout_marginTop="32dp"
+                  app:layout_constraintTop_toBottomOf="@+id/et_mostrar_fecha_picker"
+                  app:layout_constraintLeft_toLeftOf="parent" />
+
+
+                <Button
+                    android:id="@+id/ib_obtener_hora"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginTop="32dp"
+                    android:text="HORA"
+                    app:layout_constraintTop_toBottomOf="@+id/et_mostrar_fecha_picker"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintLeft_toRightOf="@+id/et_mostrar_hora_picker"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintHorizontal_bias="0.504"
+                    tools:ignore="ContentDescription" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/wordBlack"
+                    android:textSize="20dp"
+                    android:text="Ubicación" />
+
+                <EditText
+                    android:id="@+id/ubicacion_evento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/wordBlack" />
+            </LinearLayout>
+
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_marginTop="20dp"
+              android:layout_height="match_parent">
+
+              <Button
+                  android:id="@+id/aceptar_evento"
+                  android:layout_width="313dp"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentTop="true"
+                  android:layout_centerHorizontal="true"
+                  android:layout_marginTop="13dp"
+                  android:background="@drawable/buttonstyle"
+                  android:shadowColor="#A8A8A8"
+                  android:shadowDx="0"
+                  android:shadowDy="0"
+                  android:shadowRadius="5"
+                  android:text="CREAR EVENTO"
+                  android:textColor="@color/colorWhite"
+                  android:textSize="20sp"
+                  android:typeface="normal" />
+
+          </RelativeLayout>
+      </LinearLayout>
+  </LinearLayout>
+</LinearLayout>
